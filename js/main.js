@@ -16,7 +16,7 @@ $(document).ready(function(){
   });	
 
   //작업물 클릭
-  $(document).on('click','.btn_work_link',function(){
+  $(document).on('click','.btn_work_detail',function(){
     var $url = 'work/' + $(this).attr('data-url');
     $('.header_wrap').addClass('fadeout');
     $('.main_header, .main_content').delay(100).addClass('wide');
@@ -35,8 +35,12 @@ function workSlider() {
   var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     slidesPerView: 1,
+    speed: 500,
     spaceBetween: 30,
-    mousewheel: true,
+    mousewheel: false,
+    keyboard: {
+      enabled: true,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

@@ -3,6 +3,7 @@
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 30,
+    speed: 500,
     keyboard: {
       enabled: true,
     },

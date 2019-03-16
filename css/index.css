@@ -405,7 +405,7 @@ body {
 }
 
 .content_wrap .work_info.fadeout {
-  opacity: 0;
+  opacity: 1;
   transition: all 0.4s cubic-bezier(0.15, 0.005, 0.155, 1);
 }
 
@@ -432,7 +432,7 @@ body {
 
 .work_title {
   position: absolute;
-  top: 50%;
+  top: 53%;
   transform: translateY(-50%);
   color: #fff;
   font-size: 96px;
