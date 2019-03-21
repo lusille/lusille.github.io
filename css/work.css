@@ -91,7 +91,7 @@ body {
   font-size: 0;
 }
 
-.wrap.wrap_bg {
+.wrap .wrap_bg {
   background-color: rgba(0, 0, 204, 0.1);
 }
 
@@ -377,7 +377,12 @@ body {
 
 .work_inner .main_image {
   width: 1080px; 
-  padding: 80px 0 120px 0;
+  margin: 80px 0 120px 0;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
 }
 
 #work01 .work_text.header h2 {
@@ -459,4 +464,8 @@ body {
   text-align: center;
   font-weight: 100;
   padding-top: 0px
+}
+.swiper-container {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+
 }

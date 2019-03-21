@@ -51,9 +51,8 @@ table {
   border-spacing: 0;
 }
 
-/* 
-  reset 추가
-*/
+/* reset 추가 */
+
 html, body {
   height: 100%;
 }
@@ -91,7 +90,7 @@ body {
 }
 
 .wrap.wrap_bg {
-  background-color: rgba(0, 0, 204, 0.1);
+  background-color: #dadee5
 }
 
 .blind {
@@ -442,33 +441,117 @@ body {
   text-align: center;
 }
 
-.about_wrap h3 {
+.item_wrap {
+  display: table-row;
+}
+.about_wrap {
+  display: table;
+  width: 100%;
+  height: 88vh;
+  padding: 0;
+  background-color:white
+}
+
+.about_table {
+  position: relative;
+  display: table-cell;
+  width: 38%;
+  font-size: 32px;
+  height: auto;
+  background-color:white
+}
+.about_bg {
+  display: table-cell;
+  background: url(../images/about_bg.png) no-repeat center;
+  width: 24%;
+  height: 88vh;
+}
+
+.about_top {
+  position: absolute;
+  top: 80px;
+}
+
+.about_bottom {
+  position: absolute;
+  bottom: 80px;
+}
+
+.about_main {
+  width: 100%;
   color: #3377ff;
-  font-size: 2.08vw;
-  line-height: 1.35;
+  font-size: 36px;
   font-weight: 500;
+  line-height: 1.3em;
 }
 
-.about_wrap .profile_list {
-  margin-bottom: 1.5vw;
+.about_sub {
+  width: 100%;
+  text-align: right;
 }
 
-.about_wrap .profile_list li {
-  color: #000;
-  font-size: 0.83vw;
-  font-weight: 500;
-  line-height: 1.75;
+.about_sub h1 {
+  font-size: 32px;
+  font-weight: 300;
+  padding-right: 6px;
 }
 
-.about_wrap .profile_text {
-  color: #000;
-  font-size: 0.83vw;
-  line-height: 1.75;
+.about_sub h2 {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+  padding-right: 6px;
 }
 
-.col_half {
-  margin-bottom: 1.25vw;
-  padding-bottom: 0.5vw;
-  width: 50%;
-  background-color: rgba(0, 204, 204, 0.1);
+.about_contact {
+  width: 100%;
+}
+
+.about_contact h1 {
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.about_contact h2 {
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+.about_history {
+  width: 100%;
+  text-align: right;
+}
+
+.about_history h1 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+  padding-top: 40px;
+  padding-right: 6px;
+}
+
+.history_logo1 {
+  width: 152px;
+  height: auto;
+}
+
+.history_logo2 {
+  width: 92px;
+  height: auto;
+  padding-right: 6px;
+}
+
+.history_logo3 {
+  width: 158px;
+  height: auto;
+  padding-right: 6px;
+}
+
+.history_logo4 {
+  width: 102px;
+  height: auto;
+  padding-right: 6px;
 }
