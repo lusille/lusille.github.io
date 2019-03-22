@@ -463,18 +463,19 @@ body {
 .about_bg {
   display: table-cell;
   background: url(../images/about_bg.png) no-repeat center;
+  background-size: auto 88vh;
   width: 24%;
   height: 88vh;
 }
 
 .about_top {
   position: absolute;
-  top: 80px;
+  top:70px;
 }
 
 .about_bottom {
   position: absolute;
-  bottom: 80px;
+  bottom: 60px;
 }
 
 .about_main {
@@ -482,7 +483,7 @@ body {
   color: #3377ff;
   font-size: 36px;
   font-weight: 500;
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
 
 .about_sub {
@@ -492,15 +493,16 @@ body {
 
 .about_sub h1 {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 400;
   padding-right: 6px;
+  padding-top: 8px;
 }
 
 .about_sub h2 {
   padding-top: 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 1.7em;
   padding-right: 6px;
 }
 
@@ -510,7 +512,7 @@ body {
 
 .about_contact h1 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
 
 }
 
@@ -526,7 +528,7 @@ body {
 }
 
 .about_history h1 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5em;
   padding-top: 40px;
