@@ -6,11 +6,15 @@ $(document).ready(function(){
     var $btn = $(this).parent('li');
 
     $btn.addClass('active').siblings('li').removeClass('active');
-    linkToPage($url);
+    //linkToPage($url);
     if($url === 'about.html') {
       $(".wrap").addClass('wrap_bg');
+      $(".main_content").addClass('roll_up shadow_none');
+      $(".main_content").removeClass('roll_down');
     }else {
       $(".wrap").removeClass('wrap_bg');
+      $(".main_content").removeClass('roll_up shadow_none');
+      $(".main_content").addClass('roll_down');
       setTimeout(workSlider, 50);
     }
   });	
