@@ -1,3 +1,18 @@
+$(document).ready(function(){
+  $('.btn_link_main').on('click',function(){
+    var $url = $(this).attr('data-url');
+
+    $('.dimmed_layer').addClass('dimmed_on');
+    $('.work_content').addClass('dimmed_on');
+    setTimeout(function(){
+      location.href = $url;
+    }, 1000);
+
+  });
+  
+
+});
+
 //work slider
 
 var swiper = new Swiper('.swiper-container', {
