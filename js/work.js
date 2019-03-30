@@ -1,3 +1,4 @@
+//상세 > 인덱스 페이지 전환
 $(document).ready(function(){
   $('.btn_link_main').on('click',function(){
     var $url = $(this).attr('data-url');
@@ -6,7 +7,7 @@ $(document).ready(function(){
     $('.work_content').addClass('dimmed_on');
     setTimeout(function(){
       location.href = $url;
-    }, 1000);
+    }, 700);
 
   });
   
@@ -17,7 +18,7 @@ $(document).ready(function(){
 
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 50,
     speed: 500,
     keyboard: {
       enabled: true,

@@ -40,7 +40,7 @@ function workSlider() {
     direction: 'vertical',
     slidesPerView: 1,
     speed: 500,
-    spaceBetween: 30,
+    spaceBetween: 50,
     mousewheel: false,
     keyboard: {
       enabled: true,
