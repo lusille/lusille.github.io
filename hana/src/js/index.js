@@ -28,12 +28,16 @@ $(document).ready(function(){
 
 
     //원큐 금융상담 메뉴 인터렉션 확인
-
     $('.fs_btn_menu').on('click', function(e){
         e.preventDefault();
-        $('.fs_btn_menu').attr('aria-selected', false);
-        $(this).attr('aria-selected', true);
-    });
+        if($(this).attr('aria-selected') == 'true') {
+           $(this).attr('aria-selected', false);
+          
+           } else {
+             $('.fs_btn_menu').attr('aria-selected', false);
+              $(this).attr('aria-selected', true);
+           }
+      })
 
     // 개인정보 이용동의/ 서비스 약관 모두동의 버튼
     $('.fs_btn_confirm').on('click',function(){
