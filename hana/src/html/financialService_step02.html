@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>원큐금융라운지</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
     <div id="wrap">
         <!-- 공통 header -->
@@ -49,8 +51,10 @@
                     <div class="fs_service_content">
                         <div class="fs_condition_wrap">
                             <h4 class="fs_condition_tit">필수） 개인 정보 수집· 이용 동의</h4>
-                            <p class="fs_condition_t">본 화면에서 직접 등록/변경한 전화번호는 상담예약 시만 이용되며, 당행에 등록된 개인 정보를 변경하고자 하는 경우에는 인터넷 뱅킹을 통해 [개인정보변경] 메뉴를 이용하시기 바랍니다.</p>
-                            <p class="fs_condition_t">본 화면에서 직접 등록/변경한 전화번호는 상담예약 시만 이용되며, 당행에 등록된 개인 정보를 변경하고자 하는 경우에는 인터넷 뱅킹을 통해 [개인정보변경] 메뉴를 이용하시기 바랍니다.</p>
+                            <p class="fs_condition_t">본 화면에서 직접 등록/변경한 전화번호는 상담예약 시만 이용되며, 당행에 등록된 개인 정보를 변경하고자 하는 경우에는
+                                인터넷 뱅킹을 통해 [개인정보변경] 메뉴를 이용하시기 바랍니다.</p>
+                            <p class="fs_condition_t">본 화면에서 직접 등록/변경한 전화번호는 상담예약 시만 이용되며, 당행에 등록된 개인 정보를 변경하고자 하는 경우에는
+                                인터넷 뱅킹을 통해 [개인정보변경] 메뉴를 이용하시기 바랍니다.</p>
                         </div>
                         <!-- 약관에 동의 선택시 aria-pressed="true"로 변경해주세요 -->
                         <button type="button" class="fs_btn_confirm" aria-pressed="false">이용에 동의합니다</button>
@@ -62,8 +66,9 @@
                     <a href="#" class="fs_btn_prev">이전</a>
                     <a href="financialService_step03.html" class="fs_btn_next">다음</a>
                 </div>
-                <div class="fs_btn_wrap">
+                <div class="fs_btn_wrap" style="display: none;">
                     <a href="#" class="fs_btn_prev">이전</a>
+                    <!-- 모든 단계화면에서 정보 미입력시 DIM처리되는 버튼 디자인입니다. -->
                     <a href="#" class="fs_btn_next fs_btn_disabled">다음</a>
                 </div>
             </div>
@@ -72,10 +77,9 @@
     </div>
 
     <!-- jquery cdn -->
-    <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-  <script src="../js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
 </body>
+
 </html>
