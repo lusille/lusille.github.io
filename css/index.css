@@ -57,6 +57,19 @@ html, body {
   height: 100%;
 }
 
+input{
+  /*ios대응*/
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  }
+  select{
+  /*ios대응*/
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  appearance: none;
+  }
+
 img {
   border: 0;
 }
