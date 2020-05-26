@@ -137,6 +137,7 @@ html {
 /* banner */
 .fs_banner_wrap {
   position: relative;
+  overflow: hidden;
 }
 
 .fs_banner_wrap::after {
