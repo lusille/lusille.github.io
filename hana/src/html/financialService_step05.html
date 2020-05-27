@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>원큐금융라운지</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
     <div id="wrap">
         <!-- 공통 header -->
@@ -30,14 +32,14 @@
                                 <span class="step_t">개인정보<br>이용동의</span>
                             </a>
                         </li>
-                        <li class="fs_step_item">
-                            <a href="#" class="fs_step_link" aria-current="true">
+                        <li class="fs_step_item step_complete">
+                            <a href="#" class="fs_step_link" aria-current="false">
                                 <span class="step_num">3단계</span>
-                                <span class="step_t">상담지역<br>내용입력</span>
+                                <span class="step_t">상담신청<br>내용입력</span>
                             </a>
                         </li>
                         <li class="fs_step_item">
-                            <a href="#" class="fs_step_link" aria-current="false" onclick="return false;">
+                            <a href="#" class="fs_step_link" aria-current="true" onclick="return false;">
                                 <span class="step_num">4단계</span>
                                 <span class="step_t">본인인증<br>절차</span>
                             </a>
@@ -56,7 +58,8 @@
                                 </select>
                             </div>
                             <div class="fs_sc_inputform">
-                                <input type="text" id="fsPhoneNum" class="fs_input" placeholder="휴대번호를 입력해주세요" maxlength="13">
+                                <input type="text" id="fsPhoneNum" class="fs_input" placeholder="휴대번호를 입력해주세요"
+                                    maxlength="13">
                             </div>
                         </div>
                         <div class="fs_certification_wrap">
@@ -78,10 +81,9 @@
     </div>
 
     <!-- jquery cdn -->
-    <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-  <script src="../js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
 </body>
+
 </html>

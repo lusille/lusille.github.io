@@ -323,6 +323,39 @@ html {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
 }
+/* contents */
+.fs_detail_wrap {
+  display: inline-block;
+  text-align: center;
+  padding: 60px 30px 60px 30px;
+  border-top: 1px solid #DADEE6;
+}
+.fs_detail_tit{
+  color: #28B2A4;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.fs_detail_list {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.4;
+  padding-bottom: 30px;
+}
+.fs_detail_contents {
+  display: inline-flex;
+}
+.fs_detail_item {
+  width: 100px;
+}
+.fs_detail_text {
+  padding-top: 14px;
+  line-height: 1.4;
+}
+.fs_detail_text span{
+  color: #28B2A4;
+}
+
 
 /* notice */
 .fs_notice_wrap {
@@ -1021,4 +1054,15 @@ html {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   background-color: #28b2a4;
+}
+
+/* 상담신청내용 타입*/
+.type_a1 {
+  display: block;
+}
+.type_a2 {
+  display: none;
+}
+.type_a3 {
+  display: none;
 }

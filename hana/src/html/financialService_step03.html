@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>원큐금융라운지</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
     <div id="wrap">
         <!-- 공통 header -->
@@ -33,7 +35,7 @@
                         <li class="fs_step_item">
                             <a href="#" class="fs_step_link" aria-current="true">
                                 <span class="step_num">3단계</span>
-                                <span class="step_t">상담지역<br>내용입력</span>
+                                <span class="step_t">상담신청<br>내용입력</span>
                             </a>
                         </li>
                         <li class="fs_step_item">
@@ -45,38 +47,88 @@
                     </ol>
                 </div>
                 <div class="fs_service_wrap">
-                    <h3 class="fs_service_tit">상담지역 내용</h3>
+                    <h3 class="fs_service_tit">상담 신청 내용</h3>
                     <div class="fs_service_content">
-                        <div class="fs_sc_tit">상담신청내용<span class="ico_required">필수입력</span></div>
+                        <div class="fs_sc_tit">상담 신청 내용<span class="ico_required">필수입력</span></div>
                         <div class="fs_sc_selform">
-                            <label class="blind">상담신청내용</label>
+                            <label class="blind">상담 신청 내용</label>
                             <select class="fs_sc_select">
-                                <option value="강남구">강남구</option>
-                                <option value="강동구">강동구</option>
+                                <option value="전(월)세대출">전(월)세대출</option>
+                                <option value="주택담보대출">주택담보대출</option>
+                                <option value="오토금융,자산관리 & 신용대출">오토금융,자산관리 & 신용대출</option>
                             </select>
                         </div>
                         <div class="fs_sc_inputform">
-                            <div class="fs_sc_tit">상담신청내용<span class="ico_required">필수입력</span></div>
-                            <input type="text" id="fsLoanAmount" class="fs_input" placeholder="0"><span class="unit">원</span>
+                            <div class="fs_sc_tit">상담희망금액<span class="ico_required">필수입력</span></div>
+                            <input type="text" id="fsLoanAmount" class="fs_input" placeholder="0"><span
+                                class="unit">원</span>
                         </div>
                         <!-- 입력된 금액을 한글로 변경해 넣어주세요 -->
                         <div class="fs_amount_kr">삼천만원</div>
-                        <div class="fs_sc_subtit">선택 입력사항</div>
-                        <div class="fs_sc_inputform">
-                            <div class="fs_sc_tit">사업자명</div>
-                            <input type="text" class="fs_input" placeholder="이름을 입력해주세요">
+                        <!-- 전(월)세대출 -->
+                        <div class="type_a1">
+                            <div class="fs_sc_subtit">선택 입력사항</div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">전(월)세주소지</div>
+                                <input type="text" class="fs_input" placeholder="주소를 입력해주세요">
+                            </div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">직장(사업장)명</div>
+                                <input type="number" class="fs_input" placeholder="직장명을 입력해주세요">
+                            </div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">직장(사업장)주소</div>
+                                <input type="number" class="fs_input" placeholder="주소를 입력해주세요">
+                            </div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">연소득</div>
+                                <input type="text" id="fsLoanAmount" class="fs_input" placeholder="0"><span
+                                    class="unit">원</span>
+                            </div>
+                            <!-- 입력된 금액을 한글로 변경해 넣어주세요 -->
+                            <div class="fs_amount_kr">삼천만원</div>
                         </div>
-                        <div class="fs_sc_inputform">
-                            <div class="fs_sc_tit">사업자 번호</div>
-                            <input type="number" class="fs_input" placeholder="번호를 입력해주세요">
+                        <!-- 주택담보대출 -->
+                        <div class="type_a2">
+                            <div class="fs_sc_subtit">선택 입력사항</div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">담보물 주소지</div>
+                                <input type="text" class="fs_input" placeholder="주소를 입력해주세요">
+                            </div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">직장(사업장)명</div>
+                                <input type="number" class="fs_input" placeholder="직장명을 입력해주세요">
+                            </div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">직장(사업장)주소</div>
+                                <input type="number" class="fs_input" placeholder="주소를 입력해주세요">
+                            </div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">연소득</div>
+                                <input type="text" id="fsLoanAmount" class="fs_input" placeholder="0"><span
+                                    class="unit">원</span>
+                            </div>
+                            <!-- 입력된 금액을 한글로 변경해 넣어주세요 -->
+                            <div class="fs_amount_kr">삼천만원</div>
                         </div>
-                        <div class="fs_sc_inputform">
-                            <div class="fs_sc_tit">사업자 연락처</div>
-                            <input type="number" class="fs_input" placeholder="연락처 입력해주세요">
-                        </div>
-                        <div class="fs_sc_inputform">
-                            <div class="fs_sc_tit">사업자 주소</div>
-                            <input type="text" class="fs_input" placeholder="주소를 입력해주세요">
+                        <!-- 오토금융,자산관리 & 신용대출 -->
+                        <div class="type_a3">
+                            <div class="fs_sc_subtit">선택 입력사항</div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">직장(사업장)명</div>
+                                <input type="number" class="fs_input" placeholder="직장명을 입력해주세요">
+                            </div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">직장(사업장)주소</div>
+                                <input type="number" class="fs_input" placeholder="주소를 입력해주세요">
+                            </div>
+                            <div class="fs_sc_inputform">
+                                <div class="fs_sc_tit">연소득</div>
+                                <input type="text" id="fsLoanAmount" class="fs_input" placeholder="0"><span
+                                    class="unit">원</span>
+                            </div>
+                            <!-- 입력된 금액을 한글로 변경해 넣어주세요 -->
+                            <div class="fs_amount_kr">삼천만원</div>
                         </div>
                     </div>
                 </div>
@@ -90,10 +142,9 @@
     </div>
 
     <!-- jquery cdn -->
-    <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-  <script src="../js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
 </body>
+
 </html>
