@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="23" height="13" x=".5" y=".5" stroke="#28B2A4" rx="2"/>
+        <g stroke="#28B2A4" transform="translate(4 2)">
+            <path stroke-linecap="round" d="M0 8.5C0 6.696 1.567 5 3.5 5S7 6.696 7 8.5"/>
+            <circle cx="3.5" cy="3" r="2"/>
+        </g>
+        <g fill="#28B2A4" transform="translate(14 3.5)">
+            <rect width="6" height="1" rx=".5"/>
+            <rect width="6" height="1" y="3" rx=".5"/>
+            <rect width="6" height="1" y="6" rx=".5"/>
+        </g>
+    </g>
+</svg>

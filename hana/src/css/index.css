@@ -124,6 +124,10 @@ html {
   overflow: hidden;
 }
 
+.mask.show_on {
+  display: block;
+}
+
 .popup_layer {
   position: fixed;
   margin: 0 20px;
@@ -178,6 +182,11 @@ html {
   font-weight: 300;
   line-height: 24px;
   letter-spacing: -0.3px;
+}
+
+.fs_banner_wrap .fs_banner_t .fs_st {
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* menu list */
@@ -323,6 +332,7 @@ html {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
 }
+
 /* contents */
 .fs_detail_wrap {
   display: inline-block;
@@ -330,11 +340,13 @@ html {
   padding: 60px 30px 60px 30px;
   border-top: 1px solid #DADEE6;
 }
-.fs_detail_tit{
+
+.fs_detail_tit {
   color: #28B2A4;
   font-size: 20px;
   padding-bottom: 20px;
 }
+
 .fs_detail_list {
   color: #000000;
   font-size: 14px;
@@ -342,20 +354,23 @@ html {
   line-height: 1.4;
   padding-bottom: 30px;
 }
+
 .fs_detail_contents {
   display: inline-flex;
 }
+
 .fs_detail_item {
   width: 100px;
 }
+
 .fs_detail_text {
   padding-top: 14px;
   line-height: 1.4;
 }
-.fs_detail_text span{
+
+.fs_detail_text span {
   color: #28B2A4;
 }
-
 
 /* notice */
 .fs_notice_wrap {
@@ -572,7 +587,7 @@ html {
   padding: 0 11px;
   width: 100%;
   height: 40px;
-  color: #b8becc;
+  color: #000;
   font-size: 14px;
   font-weight: 400;
   line-height: 40px;
@@ -755,7 +770,7 @@ html {
   width: 12px;
   height: 14px;
   vertical-align: top;
-  margin: 3px 6px 0;
+  margin: 3px 6px 0 0;
   background-image: url(../img/ico_select_uncheck.svg);
   background-size: 100%;
   background-position: center;
@@ -779,6 +794,7 @@ html {
 
 .fs_condi .fs_check_btn[aria-selected="true"] {
   color: #000;
+  font-weight: 500;
 }
 
 .fs_condi .fs_check_btn[aria-selected="true"]::before {
@@ -794,6 +810,7 @@ html {
 }
 
 .fs_condi .fs_condition_link {
+  position: relative;
   display: block;
   padding: 0 15px;
   color: #98a1b3;
@@ -915,7 +932,21 @@ html {
 }
 
 .fs_result_wrap {
-  padding: 35px 30px 50px;
+  padding: 35px 0 0;
+  margin: 0 30px;
+}
+
+.fs_result_wrap + .fs_result_wrap {
+  display: none;
+  border-top: 1px solid #dadee6;
+}
+
+.fs_result_wrap[aria-hidden="false"] {
+  display: block;
+}
+
+.fs_result_wrap .fs_result_list {
+  padding-bottom: 14px;
 }
 
 .fs_result_wrap .fs_result_item {
@@ -963,6 +994,49 @@ html {
   flex: 1;
 }
 
+.fs_result_wrap .fs_btn_namecard {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 0 6px;
+  color: #28b2a4;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  background-color: #f2f5fa;
+  border-radius: 2px;
+  vertical-align: top;
+}
+
+.fs_result_wrap .fs_btn_namecard::before {
+  content: "";
+  width: 24px;
+  height: 14px;
+  display: inline-block;
+  background-image: url(../img/ico_namecard.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  vertical-align: top;
+  margin: 3px 4px 0 0;
+}
+
+.fs_result_wrap .fs_btn_detail,
+.fs_result_wrap .fs_btn_close {
+  width: 100%;
+  display: block;
+  color: #000;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.fs_result_wrap .fs_btn_detail[aria-expanded="true"],
+.fs_result_wrap .fs_btn_close[aria-expanded="true"] {
+  display: none;
+}
+
 .fs_fixbtn_wrap {
   position: fixed;
   left: 0;
@@ -981,20 +1055,37 @@ html {
   letter-spacing: -0.3px;
   background-color: #28b2a4;
   border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+}
+
+.fs_mainbtn_wrap {
+  padding: 70px 20px 20px;
+}
+
+.fs_mainbtn_wrap .fs_btn_main {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: -0.3px;
+  background-color: #28b2a4;
+  border-radius: 25px;
 }
 
 /* popup layer */
 .fs_ly_condition {
+  display: none;
   padding: 30px 20px 20px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.fs_ly_condition.show_on {
+  display: block;
 }
 
 .fs_ly_condition .popup_header {
@@ -1056,13 +1147,14 @@ html {
   background-color: #28b2a4;
 }
 
-/* 상담신청내용 타입*/
 .type_a1 {
   display: block;
 }
+
 .type_a2 {
   display: none;
 }
+
 .type_a3 {
   display: none;
 }

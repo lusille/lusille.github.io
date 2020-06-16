@@ -56,4 +56,30 @@ $(document).ready(function(){
             $(this).attr('aria-selected', true);
         }
     });
+
+    //개인정보 이용동의 약관보기 버튼(팝업)
+    $('.fs_condition_link').on('click',function(e){
+        e.preventDefault();
+        $('.mask').addClass('show_on');
+        $('.mask').height($(document).height());
+        $('.fs_ly_condition').addClass('show_on');
+    });
+
+    //개인정보 이용동의 약관 팝업 닫기
+    $('.popup_btn_close').on('click',function(){
+        $('.mask').removeClass('show_on');
+        $('.mask').height("");
+        $('.fs_ly_condition').removeClass('show_on');
+    });
+
+    //나의 상담조회 상세 정보보기 
+    $('.fs_btn_detail').on('click', function(){
+        $(this).attr('aria-expanded', true);
+        $('.fs_result_wrap').attr('aria-hidden', false);
+    });
+
+    $('.fs_btn_close').on('click', function(){
+        $('.fs_btn_detail').attr('aria-expanded', false);
+        $('.fs_result_wrap').attr('aria-hidden', true);
+    })
 });
