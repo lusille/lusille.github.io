@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="160px" viewBox="0 0 20 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>map-marker-3</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard-Copy-8" transform="translate(-380.000000, -3271.000000)">
+            <g id="Group-40-Copy-2" transform="translate(0.000000, 2778.000000)">
+                <g id="Group-14-Copy" transform="translate(375.000000, 160.000000)">
+                    <g id="map-marker-3" transform="translate(2.000000, 236.000000)" filter="url(#filter-1)">
+                        <g transform="translate(2.500000, 96.500000)">
+                            <circle id="Oval" stroke="#353D4C" stroke-width="3" cx="10.5" cy="10.5" r="8.5"></circle>
+                            <path d="M10.5,159 C15.1944204,159 19,155.19442 19,150.5 C19,145.80558 15.1944204,142 10.5,142 C5.80557963,142 2,145.80558 2,150.5 C2,155.19442 5.80557963,159 10.5,159 Z" id="Oval-Copy-2" stroke="#353D4C" stroke-width="3" fill="#333D4C"></path>
+                            <line x1="10.5" y1="20" x2="10.5" y2="154" id="Path" stroke="#353D4C" stroke-width="3"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

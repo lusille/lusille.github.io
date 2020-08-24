@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>clock</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Artboard-Copy-8" transform="translate(-376.000000, -3177.000000)">
+            <g id="Group-40-Copy-2" transform="translate(0.000000, 2778.000000)">
+                <g id="Group-14-Copy" transform="translate(375.000000, 160.000000)">
+                    <g id="clock" transform="translate(2.000000, 236.000000)" filter="url(#filter-1)">
+                        <g transform="translate(0.000000, 4.000000)">
+                            <g id="Group-4" transform="translate(1.500000, 1.500000)" stroke="#FFFFFF" stroke-width="3">
+                                <circle id="Oval" stroke-linecap="round" cx="10.5" cy="10.5" r="10.5"></circle>
+                                <polyline id="Path" points="10.5 4.2 10.5 10.5 14.7 12.6"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
