@@ -6,6 +6,10 @@
 a {
     text-decoration: none;
 }
+a:link {
+    text-decoration: none; 
+    color: #ffffff;}
+
 .video {
     object-fit: cover;
     width: 100vw;
@@ -242,7 +246,7 @@ a {
 
 /* content4 */
 .driver-bg {
-    background: url('/img/content4_bg1.jpg') no-repeat center center;
+    background: url('img/content4_bg1.jpg') no-repeat center center;
     color: #ffffff;
     text-align: left;
 }
