@@ -457,34 +457,60 @@ a:link {
 }
 
 .content3_list1 {
-    height: 5vw;
+    height: fit-content;
+    line-height: 5vw;
+    padding-bottom: 4vw;
+}
+.content3_list2 {
+    line-height: 5vw;
+    height: fit-content;
+}
+.img3_1 {
+    width: 5vw;
+    height: auto;
 }
 
 .img3_1 img {
+    display: block;
     width: 5vw;
+    height: auto;
+}
+.img3_2 {
+    width: 5vw;
+    height: fit-content;
 }
 .img3_2 img {
     width: 4vw;
-    padding: 1vw 0.5vw 1vw 0.5vw;
+    display: block;
+    padding: 0.75vw 0.5vw 0.75vw 0.5vw;
 }
 .list_title {
     font-size: 4vw;
     padding: 0 0 0 2vw;
     line-height: 5vw;
-    width: 16vw;
+    width: 20vw;
     height: 5vw;
 }
 .list_title div {
     width: 16vw;
 }
-.list_sub {
-    font-size: 4vw;
-    padding: 0 0 0 8vw;
+.list_title1 {
+    height: 28vw;
 }
+.list_sub {
+    height: fit-content;
+    font-size: 4vw;
+    line-height: 5vw;
+    padding: 0 0 0 4vw;
+}
+.list_sub div {
+    line-height: 5vw;
+}
+
 .list_sub1 {
     line-height: 5vw; 
-    padding-top: 4px; 
-    height: 21vw; 
+    padding-top: 1vw;
+    height: 22vw; 
     font-size: 3.4vw
 }
 .content3_img img {
