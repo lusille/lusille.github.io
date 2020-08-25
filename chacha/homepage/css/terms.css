@@ -3,6 +3,16 @@
 
     body { padding: 0; margin: 0}
 
+
+/* 페이지 */
+.title {
+background: url('../img/terms_bg.jpg') no-repeat center center;
+}
+
+
+
+
+
 /* 약관 */
 .terms {
     max-width: 1020px;

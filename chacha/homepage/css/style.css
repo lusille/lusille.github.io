@@ -47,6 +47,11 @@ a:link {
     justify-content: center;
     flex-direction: column;
 }
+.title_text span {
+    color: #00CCB8; 
+    font-weight: 700;
+}
+
 .title_text p {
     margin:0 ;
     color: #ffffff;
@@ -119,8 +124,7 @@ a:link {
     justify-content: space-between;
 }
 .bg-green {
-    background-color: #3DCCBD;
-    -webkit- background-color ; color(display-p3 0 0.86 0.75)
+    background-color: #00CCB8;
 }
 .bg-white {
     background-color: #ffffff
@@ -365,7 +369,7 @@ a:link {
 }
 
 /* mobile */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
 /* 공통 */
 .wrapper {
@@ -647,10 +651,9 @@ a:link {
     width: 10vw;
     height: auto;
 }
-
 }
 
-@media screen and (max-width: 414px) {
+@media (max-width: 414px) {
 
 .img3_2 img {
     width: 4vw;
@@ -665,23 +668,34 @@ a:link {
 .list_sub1 {
     height: 21.2vw; 
 }
-
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
 
-    .img3_2 img {
-        width: 4vw;
-        display: block;
-        padding: 0vw 0.5vw;
-    }
-    
-    .list_title1 {
-        height: 26.6vw;
-    }
-    
-    .list_sub1 {
-        height: 20.6vw; 
-    }
-    
-    }
+.img3_2 img {
+    width: 4vw;
+    display: block;
+    padding: 0vw 0.5vw;
+}
+
+.list_title1 {
+    height: 26.6vw;
+}
+
+.list_sub1 {
+    height: 20.6vw; 
+}
+}
+
+/* 출력 장치가 256 이상 색을 지원하면 실행 */
+@media all and (color-gamut: p3) {
+.bg-green {
+    background-color : color(display-p3 0.208 0.8 0.724)
+}
+.title_text span {
+    color : color(display-p3 0 0.8 0.675)
+}
+.driver_btn {
+    background-color : color(display-p3 0 0.8 0.675)
+}
+} 
