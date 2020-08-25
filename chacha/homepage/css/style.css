@@ -1,7 +1,38 @@
 
 * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 
-    body { padding: 0; margin: 0; background-color:#3e434d;}
+/* 공통 */
+body { padding: 0; margin: 0; background-color:#3e434d;}
+
+.content {
+    padding: 120px 0;
+    display: block;
+}
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.title_logo {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: 30px;
+    top: 20px;
+    z-index: 1;
+}
+.bg-green {
+    background-color: #00CCB8;
+}
+.bg-white {
+    background-color: #ffffff
+}
+.bg-gray {
+    background-color: #E6EAF2
+}
 
 a {
     text-decoration: none;
@@ -30,14 +61,7 @@ a:link {
     overflow: hidden;
     background-color: black;
 }
-.title_logo {
-    position: absolute;
-    width: 100px;
-    height: auto;
-    left: 30px;
-    top: 20px;
-    z-index: 1;
-}
+
 .title_text {
     position: relative;
     height: 100vh;
@@ -108,29 +132,6 @@ a:link {
 
 .title_btn_text {
     line-height: 24px;
-}
-
-/* 공통 */
-.content {
-    padding: 120px 0;
-    display: block;
-}
-.wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-}
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-.bg-green {
-    background-color: #00CCB8;
-}
-.bg-white {
-    background-color: #ffffff
-}
-.bg-gray {
-    background-color: #E6EAF2
 }
 
 /* content1 */
@@ -572,6 +573,7 @@ a:link {
     font-size: 4vw;
     padding: 4vw 6vw;
     line-height: 5vw;
+    border-radius: 10vw;
 }
 .driver_btn img {
     width: 5vw;

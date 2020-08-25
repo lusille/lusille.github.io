@@ -6,11 +6,19 @@
 
 /* 페이지 */
 .title {
-background: url('../img/terms_bg.jpg') no-repeat center center;
+    width: 100%;
+    height: 480px;
+    background: url('../img/terms_bg.jpg') no-repeat center center;
 }
 
-
-
+.title_logo {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: 30px;
+    top: 20px;
+    z-index: 1;
+}
 
 
 /* 약관 */
