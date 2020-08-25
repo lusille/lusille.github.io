@@ -119,7 +119,8 @@ a:link {
     justify-content: space-between;
 }
 .bg-green {
-    background-color: #3DCCBD
+    background-color: #3DCCBD;
+    -webkit- background-color ; color(display-p3 0 0.86 0.75)
 }
 .bg-white {
     background-color: #ffffff
@@ -133,12 +134,14 @@ a:link {
     display: block;
     font-size: 24pt;
     font-weight: 300;
+    line-height: 1.5;
     letter-spacing: -0.05em;
 }
 .text_sub {
     display: block;
     font-size: 12pt;
     font-weight: 300;
+    line-height: 1.6;
     letter-spacing: -0.05em;
 }
 
@@ -246,7 +249,6 @@ a:link {
 }
 
 .content3_img img {
-    padding-top: 20px;
     width: 420px;
     height: auto;
 }
@@ -281,8 +283,8 @@ a:link {
     text-align: left;
     width: 400px;
     line-height: 40px;
+    list-style-type: square;
 }
-
 
 .driver_btn {
     display: flex;
@@ -296,7 +298,7 @@ a:link {
     border-radius: 30px;
 }
 .driver_btn img {
-    width: 30px;
+    width: 24px;
     height: auto;
     padding-right: 12px;
 }
@@ -363,7 +365,7 @@ a:link {
 }
 
 /* mobile */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
 /* 공통 */
 .wrapper {
@@ -374,11 +376,26 @@ a:link {
 .row {
     flex-direction: column;
 }
+.text_main {
+    font-size: 6vw;
+    text-align: center;
+    margin: 0 0 5vw 0;
+}
+.text_sub {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3.6vw;
+    text-align: center;
+    word-break: keep-all;
+}
 
+/* title */
 
 .title_logo {
-    width: 80px;
+    width: 24vw;
     height: auto;
+    left: 6vw;
+    top: 5vw;
 }
 
 .title_text p {
@@ -407,17 +424,32 @@ a:link {
     line-height: 8vw;
 }
 
-.text_main {
-    font-size: 6vw;
-    text-align: center;
+.title_btn {
+    transition: none;
 }
-.text_sub {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 4vw;
-    text-align: center;
-    word-break: keep-all;
+.title_btn svg {
+    transition: none;
 }
+
+.title_btn:hover {
+    background-color: #00000000;
+    color: #ffffff;
+}
+
+.title_btn:hover svg {
+    fill: #ffffff;
+}
+
+.title_btn_img {
+    transition: none;
+}   
+.title_btn_img:hover {
+    fill: #000000;
+}
+
+
+
+/* content1 */
 
 .content1_wrap img {
     padding-top: 20vw;
@@ -425,6 +457,8 @@ a:link {
     margin: 0 auto;
     width: 70%;
 }
+
+/* content2 */
 
 .content2_wrap {
     width: 80%;
@@ -440,11 +474,13 @@ a:link {
 }
 .service_text1 {
     font-size: 5vw;
-    padding: 1vw 0 1vw 0;
+    padding: 4vw 0 3vw 0;
 }
 .service_text2 {
-    font-size: 4vw;
+    font-size: 3.6vw;
 }
+
+/* contents3 */
 
 .content3_wrap {
     width: 80%;
@@ -482,7 +518,7 @@ a:link {
 .img3_2 img {
     width: 4vw;
     display: block;
-    padding: 0.75vw 0.5vw 0.75vw 0.5vw;
+    padding: 0.75vw 0.5vw;
 }
 .list_title {
     font-size: 4vw;
@@ -520,6 +556,8 @@ a:link {
     padding-top: 20vw;
 }
 
+/* content4 */
+
 .content4_wrap {
     flex-direction: column;
 }
@@ -528,11 +566,12 @@ a:link {
     margin: 10vw auto;
     height: 5vw;
     font-size: 4vw;
-    padding: 4vw 6vw 4vw 6vw;
+    padding: 4vw 6vw;
     line-height: 5vw;
 }
 .driver_btn img {
     width: 5vw;
+    padding-right: 2vw;
 }
 .driver_btn div {
     line-height: 5vw;
@@ -552,6 +591,8 @@ a:link {
     line-height: 8vw;
     width: fit-content;
 }
+
+/* footer */
 
 .footer {
     padding: 24vw 0 40vw 0;
@@ -609,3 +650,38 @@ a:link {
 
 }
 
+@media screen and (max-width: 414px) {
+
+.img3_2 img {
+    width: 4vw;
+    display: block;
+    padding: 0.25vw 0.5vw;
+}
+
+.list_title1 {
+    height: 27.2vw;
+}
+
+.list_sub1 {
+    height: 21.2vw; 
+}
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .img3_2 img {
+        width: 4vw;
+        display: block;
+        padding: 0vw 0.5vw;
+    }
+    
+    .list_title1 {
+        height: 26.6vw;
+    }
+    
+    .list_sub1 {
+        height: 20.6vw; 
+    }
+    
+    }
