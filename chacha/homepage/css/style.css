@@ -2,7 +2,7 @@
 * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 
 /* 공통 */
-body { padding: 0; margin: 0; background-color:#3e434d;}
+body { padding: 0; margin: 0}
 
 .content {
     padding: 120px 0;
@@ -37,9 +37,10 @@ body { padding: 0; margin: 0; background-color:#3e434d;}
 a {
     text-decoration: none;
 }
-a:link {
+footer a:link {
     text-decoration: none; 
-    color: #ffffff;}
+    color: #ffffff;
+}
 
 .video {
     object-fit: cover;
@@ -260,7 +261,10 @@ a:link {
 
 /* content4 */
 .driver-bg {
-    background: url('../img/content4_bg1.jpg') no-repeat center center;
+    overflow: hidden;
+    background-image: url('../img/content4_bg1.jpg');
+    background-size: cover;
+    background-position: center center;
     color: #ffffff;
     text-align: left;
 }
@@ -301,16 +305,34 @@ a:link {
     font-size: 14pt;
     line-height: 1.4;
     border-radius: 30px;
+    transition: all 0.3s ease-out;
+
 }
-.driver_btn img {
+
+
+.driver_btn svg {
     width: 24px;
     height: auto;
+    fill: #ffffff;
     padding-right: 12px;
+    transition: all 0.3s ease-out;
 }
 
 .driver_btn div {
     line-height: 36px;
+    transition: all 0.3s ease-out;
 }
+
+.driver_btn:hover {
+    background-color: #ffffff;
+}
+.driver_btn:hover svg {
+    fill: #00B3A1;
+}
+.driver_btn:hover div {
+    color: #00B3A1;
+}
+
 /* footer */
 .footer {
     position: relative;
@@ -574,14 +596,42 @@ a:link {
     padding: 4vw 6vw;
     line-height: 5vw;
     border-radius: 10vw;
+    transition: none;
 }
-.driver_btn img {
+
+.driver_btn svg {
     width: 5vw;
     padding-right: 2vw;
+    transition: none;
 }
 .driver_btn div {
     line-height: 5vw;
+    transition: none;
 }
+
+.driver_btn:hover {
+    background-color: #00B3A1;
+}
+.driver_btn:hover svg {
+    fill: #ffffff;
+}
+.driver_btn:hover div {
+    color: #ffffff;
+}
+
+.driver_btn:active {
+    background-color: #ffffff;
+}
+.driver_btn:active svg {
+    fill: #00B3A1;
+}
+.driver_btn:active div {
+    color: #00B3A1;
+}
+
+
+
+
 .driver_sub {
     width: 70%;
     font-size: 3.4vw;
