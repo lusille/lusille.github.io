@@ -4,7 +4,6 @@
 body { padding: 0; margin: 0}
 a {
     text-decoration: none;
-    color: #000000;
 }
 
 /* 페이지 */
@@ -69,7 +68,7 @@ a {
 /* mobile */
 @media (max-width: 768px) {
 .terms_top {
-    height: 30vw;
+    height: 50vw;
 }
 .terms_content {
     width: 80%;
