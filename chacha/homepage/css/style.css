@@ -298,7 +298,7 @@ footer a:link {
 .driver_btn {
     display: flex;
     height: 40px;
-    margin-top: 20px;
+    margin-top: 36px;
     padding: 12px 30px 12px 30px;
     background-color: #00B3A1;
     color: #ffffff;
@@ -336,16 +336,16 @@ footer a:link {
 /* footer */
 .footer {
     position: relative;
-    background-color: #3e434d;
-    color: #ffffff;
-    padding: 60px 0 60px 0;
+    background-color: #212429;
+    color: #DADEE6;
+    padding: 60px 0 80px 0;
 }
 .footer_content {
     display: flex;
     justify-content: space-between;
 }
 .footer_logo {
-    width: 120px;
+    width: 100px;
     height: auto;
 }
 .footer_text0 {
@@ -357,15 +357,15 @@ footer a:link {
     color: #ffffff;
 }
 .footer_text1 {
-    padding: 30px 0 10px 0;
+    padding: 20px 0;
     line-height: 2;
-    font-size: 11pt;
+    font-size: 10pt;
     font-weight: 300;
 }
 .footer_text2 {
     color: #b8becc;
     padding-top: 10px;
-    font-size: 10pt;
+    font-size: 9pt;
     font-weight: 100;
     line-height: 1.6    ;
 }
